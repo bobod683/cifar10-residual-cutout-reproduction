@@ -1,0 +1,101 @@
+{
+  "variants": {
+    "plain20": {
+      "variant": "plain20",
+      "display_name": "Plain-20",
+      "n": 3,
+      "test_accuracy_mean": 90.86000000000001,
+      "test_accuracy_sd": 0.03464101615137886,
+      "test_error_mean": 9.139999999999995,
+      "test_error_sd": 0.03464101615137886,
+      "runtime_seconds_mean": 1287.5350157329813,
+      "parameter_count": 269722,
+      "seeds": [
+        42,
+        2026,
+        3407
+      ],
+      "test_accuracies": [
+        90.84,
+        90.84,
+        90.9
+      ]
+    },
+    "resnet20": {
+      "variant": "resnet20",
+      "display_name": "ResNet-20",
+      "n": 3,
+      "test_accuracy_mean": 91.84333333333332,
+      "test_accuracy_sd": 0.040414518843272795,
+      "test_error_mean": 8.156666666666672,
+      "test_error_sd": 0.040414518843272795,
+      "runtime_seconds_mean": 1343.0364505636196,
+      "parameter_count": 269722,
+      "seeds": [
+        42,
+        2026,
+        3407
+      ],
+      "test_accuracies": [
+        91.88,
+        91.85,
+        91.8
+      ]
+    },
+    "resnet20_cutout": {
+      "variant": "resnet20_cutout",
+      "display_name": "ResNet-20 + Cutout",
+      "n": 3,
+      "test_accuracy_mean": 92.74666666666667,
+      "test_accuracy_sd": 0.06110100926607346,
+      "test_error_mean": 7.25333333333333,
+      "test_error_sd": 0.06110100926607346,
+      "runtime_seconds_mean": 1255.8122947141528,
+      "parameter_count": 269722,
+      "seeds": [
+        42,
+        2026,
+        3407
+      ],
+      "test_accuracies": [
+        92.68,
+        92.8,
+        92.76
+      ]
+    }
+  },
+  "paired_comparisons": {
+    "resnet20_minus_plain20": {
+      "seeds": [
+        42,
+        2026,
+        3407
+      ],
+      "accuracy_point_differences": [
+        1.039999999999992,
+        1.009999999999991,
+        0.8999999999999915
+      ],
+      "mean_difference": 0.9833333333333248,
+      "sd_difference": 0.07371114795832005,
+      "exact_two_sided_sign_flip_p": 0.25,
+      "interpretation_note": "With only three paired runs, the exact test has very low power; effect size and consistency matter more than a significance label."
+    },
+    "resnet20_cutout_minus_resnet20": {
+      "seeds": [
+        42,
+        2026,
+        3407
+      ],
+      "accuracy_point_differences": [
+        0.8000000000000114,
+        0.9500000000000028,
+        0.960000000000008
+      ],
+      "mean_difference": 0.9033333333333408,
+      "sd_difference": 0.08962886439832173,
+      "exact_two_sided_sign_flip_p": 0.25,
+      "interpretation_note": "With only three paired runs, the exact test has very low power; effect size and consistency matter more than a significance label."
+    }
+  }
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code or evidence bundle, please cite this software and the associated paper."
+title: "Reproducible Residual Learning and Cutout Study on CIFAR-10"
+type: software
+authors:
+  - family-names: "Du"
+    given-names: "Bowei"
+    affiliation: "North China Electric Power University (Baoding)"
+version: 1.0.0
+date-released: 2026-11-01
+license: MIT
+repository-code: "https://github.com/bobod683/cifar10-residual-cutout-reproduction"
+url: "https://github.com/bobod683/cifar10-residual-cutout-reproduction"
+keywords:
+  - CIFAR-10
+  - residual learning
+  - ResNet-20
+  - Cutout
+  - reproducibility
